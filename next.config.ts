@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  reactStrictMode: true,  // ReactのStrictModeを有効化
+  images: {
+    domains: ['images.microcms-assets.io'],  // 画像を許可するドメイン
+  },
 };
 
 export default nextConfig;
